@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(43, 101, 207);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: rgba(101, 211, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navbar a {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(41, 134, 255);
+}
+
+.home {
+    height: 100vh;
+    background: url('/assets/img/bg\ imagee.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    position: relative;
+    z-index: 1;
+}
+
+.home:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1;
+}
+
+.home-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.home-content h1 {
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.home-content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(226, 241, 255);
+}
+
+.home-content .home-button {
+    margin-top: 20px;
+}
+
+.home-button a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background: rgb(106, 195, 255);
+    border: 2px solid rgb(56, 93, 255);
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background 0.3s;
+}
+
+.home-button a:hover {
+    background: rgb(218, 240, 255);
+    color: black;
+}
+
+.about {
+    padding: 100px 10%;
+    background: white;
+}
+
+.about-container h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 600;
+    color: rgb(84, 206, 255);
+}
+
+.container-1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.profile-picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.description {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.description p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.about-buttons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    background: rgb(106, 195, 255);
+    border: 2px solid rgb(56, 93, 255);
+    border-radius: 8px;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.about-buttons a:hover {
+    background: rgb(218, 240, 255);
+    color: black;
+}
+
+.container-2 {
+    text-align: center;
+}
+
+.container-2 h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.skill {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress {
+    height: 100%;
+    background: #8ed6ff;
+    border-radius: 5px 0 0 5px;
+}
+
+.services {
+    padding: 100px 10%;
+    background: lightblue;
+}
+
+.container h1{
+    color: rgb(255, 255, 255);
+}
+
+.services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service {
+    background: rgba(255, 246, 252, 0.8);
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1 1 250px;
+    transition: transform 0.5s, background 0.5s;
+    max-width: 300px;
+}
+
+.service i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.service h2 {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: gray;
+}
+
+.service:hover {
+    background: rgb(43, 101, 207);
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+.service:hover h2 {
+    color: rgb(248, 238, 243);
+}
+
+.service:hover i {
+    color: rgb(43, 101, 207);
+}
+
+.wrapper {
+    margin-top: 100px;
+    padding: 0 8%;
+    z-index: 1;
+    position: relative;
+}
+
+.section-header {
+    color: rgb(84, 206, 255);
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+.box {
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: rgba(235, 232, 232, 0.8);
+    transition: transform 0.5s, backround 0.5s;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.img-text {
+    margin-top: 10px;
+}
+
+.content h2 {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: gray;
+}
+
+.box:hover {
+    background: rgb(43, 101, 207);
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+.box:hover .content h2 {
+    color: rgb(248, 238, 243);
+}
